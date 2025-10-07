@@ -1,17 +1,15 @@
-import { GlassView as GlassViewComponent } from 'expo-glass-effect';
-import { LinearGradient as LinearGradientComponent } from 'expo-linear-gradient';
 import { KeyboardAvoidingView, Platform, Text, TextInput, View } from 'react-native';
 import { withUniwind } from "uniwind";
-const GlassView = withUniwind(GlassViewComponent)
-const LinearGradient = withUniwind(LinearGradientComponent)
+const GlassView = withUniwind(View)
+const LinearGradient = withUniwind(View)
 
 export default function HomeScreen() {
   return (
     <LinearGradient
       className="pt-8 flex-1"
-      // Button Linear Gradient
-      colors={['black', '#7D0F3F']}
-      locations={[0.5, 0.8]}
+    // Button Linear Gradient
+    //colors={['black', '#7D0F3F']}
+    //locations={[0.5, 0.8]}
     >
       <KeyboardAvoidingView className="flex-1" behavior={Platform.OS === 'ios' ? 'padding' : undefined} style={{ flex: 1 }}>
         <View className="h-20 mt-auto rounded-3xl bg-pink-400/50 border border-gray-400/20">
