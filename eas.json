@@ -12,12 +12,7 @@
       "distribution": "internal"
     },
     "production": {
-      "autoIncrement": true,
-      "distribution": "internal",
-			"environment": "development",
-			"ios": {
-				"simulator": true
-			}
+      "autoIncrement": true
     }
   },
   "submit": {
